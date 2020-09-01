@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <title>Datos</title>
+  <style>
+    p{
+      color:rgba(255, 255, 255, 0);
+      position:absolute;
+    }
+    h1{
+      text-align: center;
+    }
+    img{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+    table{
+      position: relative;
+    }
+    h1{
+      position: relative;
+      color: white;
+    }
+    
+  </style>
+</head>
+<body>
+  <img src="2.jpg" alt="">
+  <h1 class="display-1">BASE DE DATOS</h1>
+  <p id="nombre">POLY NAELY KEVIN BETZY SE HOLA PORLAW SE CARLOS MARIO MARIA LUISA MAINOR MARINA JEFFRY </p>
+  <p id="edad">65 80 80 65 80 80 65 80 80 65 80 80 65 80 80 </p>
+  <p id="activo">True False False True False False True False False True False False True False False </p>
+  <p id="promedio">90.32 45.896 45.896 90.32 45.896 45.896 90.32 45.896 45.896 90.32 45.896 45.896 90.32 45.896 45.896 </p>
+</body>
+<script>
+  var nombre = document.getElementById("nombre")
+  var edad = document.getElementById("edad")
+  var activo = document.getElementById("activo")
+  var promedio = document.getElementById("promedio")
+  var nombreSplit = nombre.textContent.trim().split(" ")
+  var edadSplit = edad.textContent.trim().split(" ")
+  var activoSplit = activo.textContent.trim().split(" ")
+  var promedioSplit = promedio.textContent.trim().split(" ")
+  var tabla = document.createElement("table")
+  var thead = document.createElement("thead")
+  var tbody = document.createElement("tbody")
+  document.body.appendChild(tabla)
+  tabla.appendChild(thead)
+  tabla.appendChild(tbody)
+  tabla.className = "table table-striped table-dark"
+  var tr = document.createElement("tr")
+  var th = document.createElement("th")
+  var th2 = document.createElement("th")
+  var th3 = document.createElement("th")
+  var th4 = document.createElement("th")
+  var td = document.createElement("td")
+
+  thead.appendChild(tr)
+    tr.appendChild(th)
+    tr.appendChild(th2)
+    tr.appendChild(th3)
+    tr.appendChild(th4)
+    th.appendChild(document.createTextNode("NOMBRE"))
+    th2.appendChild(document.createTextNode("EDAD"))
+    th3.appendChild(document.createTextNode("ACTIVO"))
+    th4.appendChild(document.createTextNode("PROMEDIO"))
+
+  for (let index = 0; index < nombreSplit.length; index++) {
+ var trbody = document.createElement("tr")
+ var thbody = document.createElement("th")
+ var thedad = document.createElement("th")
+ var thactivo = document.createElement("th")
+ var thpromedio = document.createElement("th")
+ var nombreCuerpo = document.createTextNode(nombreSplit[index])
+ var nombreCuerpoedad = document.createTextNode(edadSplit[index])
+ var nombreCuerpactivo = document.createTextNode(activoSplit[index])
+ var nombreCuerpapromedio = document.createTextNode(promedioSplit[index])
+ tbody.appendChild(trbody)
+ trbody.appendChild(thbody)
+ trbody.appendChild(thedad)
+ trbody.appendChild(thactivo)
+ trbody.appendChild(thpromedio)
+ thbody.appendChild(nombreCuerpo)
+ thedad.appendChild(nombreCuerpoedad)
+ thactivo.appendChild(nombreCuerpactivo)
+ thpromedio.appendChild(nombreCuerpapromedio)
+ if(index%2==0){
+   trbody.className = "bg-primary"
+ }else{
+
+ }
+  
+  } 
+
+</script>
+</html>

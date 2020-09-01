@@ -1,0 +1,93 @@
+[
+    {
+        "nombre": "POLY",
+        "edad": 65,
+        "activo": true,
+        "promedio": 90.32
+    },
+    {
+        "nombre": "NAELY",
+        "edad": 80,
+        "activo": false,
+        "promedio": 45.896
+    },
+    {
+      "nombre": "KEVIN",
+      "edad": 80,
+      "activo": false,
+      "promedio": 45.896
+  },
+  {
+      "nombre": "BETZY",
+      "edad": 65,
+      "activo": true,
+      "promedio": 90.32
+  },
+  {
+      "nombre": "SE",
+      "edad": 80,
+      "activo": false,
+      "promedio": 45.896
+  },
+  {
+    "nombre": "HOLA",
+    "edad": 80,
+    "activo": false,
+    "promedio": 45.896
+  },
+  {
+        "nombre": "PORLAW",
+        "edad": 65,
+        "activo": true,
+        "promedio": 90.32
+    },
+    {
+        "nombre": "SE",
+        "edad": 80,
+        "activo": false,
+        "promedio": 45.896
+    },
+    {
+      "nombre": "CARLOS",
+      "edad": 80,
+      "activo": false,
+      "promedio": 45.896
+  },
+  {
+      "nombre": "MARIO",
+      "edad": 65,
+      "activo": true,
+      "promedio": 90.32
+  },
+  {
+      "nombre": "MARIA",
+      "edad": 80,
+      "activo": false,
+      "promedio": 45.896
+  },
+  {
+    "nombre": "LUISA",
+    "edad": 80,
+    "activo": false,
+    "promedio": 45.896
+  },
+  {
+      "nombre": "MAINOR",
+      "edad": 65,
+      "activo": true,
+      "promedio": 90.32
+  },
+  {
+      "nombre": "MARINA",
+      "edad": 80,
+      "activo": false,
+      "promedio": 45.896
+  },
+  {
+    "nombre": "JEFFRY",
+    "edad": 80,
+    "activo": false,
+    "promedio": 45.896
+  }
+  
+  ]
